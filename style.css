@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    transition: background-color ease .5s;
+}
+
+:root{
+    --salmon: #EF9D71;
+    --black: #000;
+    --white: #fff;
+    --cyan: #aedee0;
+    --darkSalmon: #532521; 
+    --darkCyan: #1f2f32;
+}
+
+*::selection{
+    background-color: var(--salmon);
+}
+
+body[theme="black"]{
+    background-color: var(--black);
+}
+body[theme="black"] .section{
+    color: var(--white);
+}
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+    color: var(--darkCyan);
+}
+
+body[theme="white"]{
+    background-color: var(--white);
+}
+body[theme="white"] .section{
+    color: var(--black);
+}
+
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+body[theme="salmon"] .section{
+    color: var(--darkSalmon);
+}
+
+/* Animate video*/
+.my-video{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+/* css styles */
+.solution-button:hover svg {
+    transform: rotate(45deg);
+}
+.member:hover .hover-layer{
+    height: 100%;
+    transition: ease .45s;
+}
+.hover-layer{
+    transition: height ease .3s;
+}
+.member:hover{
+    color: white;
+    transition: all ease .3s;
+}
+
+@media (width<720px) {
+    .hamburger{
+        display: block !important;
+        height: 24px !important;
+    }
+    .menu{
+        display: none !important;
+    }
+    .contact-btn{
+        display: block !important;
+    }
+    .reviews > div {
+        padding-inline: 0 !important;
+    }
+}
