@@ -14,7 +14,7 @@ I have left many features while cloning it, so you can proceed to add more funct
 
 ## Preview
 
-Click [here](https://github.com/saqibbedar/signifco-clone) or by opening the `index.html` to preview the website.
+Click [here](https://saqibbedar.github.io/signifco-clone/) to preview this website.
 
 - Note: This website is not currently responsive so please avoid previewing on mobile devices.
 
